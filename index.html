@@ -1,238 +1,355 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- DW6 -->
-<head>
-<!-- Copyright 2005 Macromedia, Inc. All rights reserved. -->
-<title>Robert M Glennon -- Author and Historian</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="mm_entertainment.css" type="text/css" />
-<style type="text/css">
-<!--
-.style2 {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 36px;
-	color: #FF9933;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert M. Glennon -- Author and Historian</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              historian: {
+                bg: '#E8DCC5', // Warm Sand/Beige
+                panel: '#FDFBF7', // Off-white/Cream
+                paper: '#F5E6D3', // Darker sand for texture
+                text: '#2C1810', // Deep Dark Brown (Coffee)
+                muted: '#6B4C3E', // Medium Brown
+                accent: '#8B4513', // Saddle Brown / Rust
+                dark: '#1a1009', // Very dark brown
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'Georgia', 'serif'],
+              body: ['"Merriweather"', 'Georgia', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- React & ReactDOM (UMD) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for in-browser JSX compilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
 }
-.style5 {color: #FF9933}
-.style6 {
-	color: #FFFFFC
-}
-.style9 {color: #FFFFFF; }
-.style10 {
-	font-size: 30px
-}
-.style11 {
-	font-size: 18px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-.style13 {font-size: 24px}
-.style15 {font-size: 12px}
-.style16 {color: #FFFFFC; font-size: 12px; }
-.style18 {font-size: 12px; color: #FFFFCC; }
-.style19 {font-size: 12px; font-weight: bold; }
-.style21 {color: #FFFFFF; font-weight: bold; }
-.style23 {
-	color: #ffffff;
-	font-size: 12px;
-}
-.style30 {font-size: 18px}
-.style31 {color: #FFFFCC}
--->
-</style>
-</head>
-<body bgcolor="#6f391e">
-<table width="960px" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#592b14"> <!-- was 840px -->
-  <tr bgcolor="592b14">
-    <td colspan="4" rowspan="2" nowrap="nowrap"><div align="center">
-      <p>&nbsp;</p>
-      <p><img src="steam2.jpg" alt="Point Clear, Hotel, Alabama, circa 1897" width="301" height="170" border="0" /></p>
-      <p>&nbsp;</p>
-    </div></td>
-    <td height="58" nowrap="nowrap" colspan="3" id="logo" valign="bottom"><div align="center" class="style10"></div></td>
-    <td width="4">&nbsp;</td>
-  </tr>
-
-  <tr bgcolor="#592b14">
-    <td height="57" nowrap="nowrap" colspan="3" id="tagline" valign="top"><div align="center" class="style11"><span class="style10"><img src="glennontitle.jpg" alt="Bob Glennon title" width="338" height="89" /></span></div></td>
-	<td width="4">&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="8" bgcolor="#2a0903"><img src="mm_spacer.gif" alt="" width="1" height="2" border="0" /></td>
-  </tr>
-
-   <tr>
-    <td colspan="8"><img src="mm_spacer.gif" alt="" width="1" height="2" border="0" /></td>
-  </tr>
-
-   <tr>
-    <td colspan="8" bgcolor="#2a0903"><img src="mm_spacer.gif" alt="" width="1" height="1" border="0" /></td>
-  </tr>
-
-   <tr>
-    <td colspan="8">&nbsp;<br />
-	&nbsp;<br />	</td>
-  </tr>
-  <tr>
-    <td width="14" valign="top">    </td>
-    <td width="35"></td>
-    <td width="50"><img src="mm_spacer.gif" alt="" width="50" height="1" border="0" /></td>
-    <td colspan="2" valign="top"><img src="mm_spacer.gif" alt="" width="640" height="1" border="0" /><br />
-
-	<table border="0" cellspacing="0" cellpadding="10">
-
-    	<tr><p class="style13"><u>Books in Print</u></p>
-        </tr>
-        <tr>
-          <td valign="top"><img src="mm_spacer.gif" alt="" width="1" height="60" border="0" /><img src="ontheairimage.jpg" width="132" height="206" border="1" /></td>
-          <td><p><img src="airtitle.jpg" alt="Alabama History on the Air" width="329" height="72" /></p>
-          <p align="left" class="style6"><br />
-              <span class="style15">Thursday, October 24, 1929 triggered the Great Depression.  In the  depths of the fallen economy, there was either long days of hard work with minimum pay, or  unemployment. Morale was low and Alabamians needed a boost! Then public communications took a significant upturn!  </span></p>
-          <p class="style6"><span class="style15">On February 7, 1930, the Mobile Press and News Item launched  the first radio  station in Mobile, WODX.  Residents of the Gulf Coast could now hear world  news and local events first hand.<br />
-              <br />
-            Within two weeks, John F. Glennon, prominent businessman and well known  Alabama historian, was sponsored by the Mobile Real Estate Board, to  promote the culture, scenery and attributes of the Mobile area.  In  January, 1935, the Old Narrator, as Glennon called himself, began a  series on Highlights in Alabama History.  The series aired 3 times a  week for 2 years, with stories about Alabama's past.  He told of  rivalries, romance and  adventure and gave listeners incentive to feel better about themselves and  their well-being.<br />
-              <br />
-            This book covers 62 of 192 recently discovered radio scripts, providing  insight into Alabama history as it was known in the 30s.<br />
-              <br />
-            400 pages<br /><p></p>
-
-<p>
-Hardback, excluding taxes and shipping, $34.95
-</p>
-<p>
-Paperback, excluding taxes and shipping, $23.95
-</p>
-
-          <p>&nbsp;</p></td>
-        </tr>
-          <tr><td valign="top"><img src="mm_spacer.gif" alt="" width="1" height="60" border="0" /><img src="kudjoimage.jpg" width="132" height="206" border="1" /></td>
-          <td>
-            <p><span class="pageName style2"><span class="pageName  style5">Kudjo; The Last Slave Voyage to America</span></span></p>
-            <p class="style6"><br />
-              <span class="style15">On a riverboat between Montgomery and Mobile, AL, in the mid-1800s, a  wager of $10,000 was set as the challenge that slaves from Africa could  no longer be brought into the United States.  The schooner &quot;Clotilde&quot;  was secretly dispatched and returned in July 1860 with 115 Africans.  They were smuggled ashore and sold to various plantation owners.<br />
-              <br />
-This story follows the life of Cudjoe Kazoola Lewis from capture in  Dahomey to freedom after the War Between The States.  Cudjoe became a  leader of the formerly enslaved villagers of Tarkar, as they settled in  Africatown, north of Mobile, to become the only settlement in the  United States to speak a pure African dialect.  <br />
-<br />
-This true story was found in a tattered envelope that was tucked  away in 1935 and remained unopened until 1997! Research revealed the  facts behind several  discussions in 1932 with Cudjoe by Rosemary Glennon and  documents Cudjoe's life and the last slave voyage to America.</span></p>
-            <p class="style23">68 pages<br />
-<p></p>
-<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-<input type="hidden" name="cmd" value="_s-xclick">
-
-<input type="hidden" name="hosted_button_id" value="9389312">
-
-
-
-Paperback,  excluding taxes and shipping, $11.95
-
-
-
-
-
-			</p>
-            <p>              <br />
-            </p></td>
-		</tr>
-            <tr><td valign="top"><img src="mm_spacer.gif" alt="" width="1" height="60" border="0" /><img src="stone2.jpg" alt="" width="132" height="206" border="1" /></td>
-            <td>            <span class="style10">Legacy of Stonecrest</span><br />
-              <span class="style30">South Marion County, FL              </span>
-              <p class="style6"><br />
-              <p class="style16">Stonecrest is a community in South Marion County, Florida, developed by  entrepreneurs during the building boom of the 1990s. The Legacy of  Stonecrest places it nearly atop the great Florida Aquifer, on land  heretofore used for cattle ranching and citrus groves.<br />
-              </p>
-              <p class="style16">In 1827, South Marion County was placed on the Seminole Indian  Reservation for a brief time while the Governor of Florida negotiated  relocation with the Indians.   About 30 miles to the southwest, the  Indians had left their victorious mark on the Dade Battlefield.</p>
-            <p class="style16">About 10 miles north, Ma Barker and her son ended their rampage of  crime in a shootout with Federal agents. Nearby in 1935, the infamous  Cross Florida Canal was started.  The project was funded and squelched  for the third and final time in 1964, by President Johnson.<br />
-            <br />
-              This small book tells in graphic detail, the colorful history of South Marion County and Stonecrest.<br />
-              <br />
-42 pages  <br />
-<p>
-Paperback, excluding taxes and shipping, $5.00
-</p>
-<table><tr><td></td></tr></table>
-</p>
-            <p>&nbsp;</p></td>
-        </tr>
-      </table>   	</td>
-    <td width="25"><img src="mm_spacer.gif" alt="" width="25" height="1" border="0" /></td> <!-- both width values were 50 -->
-    <td width="300" valign="top"><img src="mm_spacer.gif" alt="" width="1" height="10" border="0" /><br />
-     <table border="0" cellspacing="0" cellpadding="0" width="250"> <!-- width was 200 -->
-        <tr>
-          <td colspan="3" id="sidebarHeader" class="sidebarHeader" align="center"><div align="center" class="style9">
-            <div align="center"><img src="rmglennon.jpg" alt="picture of Robert M. Glennon" vspace="6" border="0" /></div>
-          </div></td>
-        </tr>
-
-        <tr>
-		<td width="5"><img src="mm_spacer.gif" alt="" width="5" height="1" border="0" /></td>
-		<td width="150" id="sidebar" class="smallText"> <!-- was 150 -->
-			<p align="center" class="style19">BIOGRAPHY</p>
-			<p align="justify"><span class="style18">Robert M. (Bob) Glennon began writing Southern history in 1987 when he found old documents that showed his family in the mainstream of Alabama’s formative history.  He was born on the Gulf Coast and was graduated from Mississippi State University and attended Loyola University Law School, New Orleans while working in the electronics industry.
- 			</span></p>
-			<p align="justify"><span class="style18">He retired from International telecommunications in 1997 and began to research little known events and persons in American history. He is now a public speaker on historic topics and has been published on contemporary non-fiction subjects, as well as extensively researched documentaries.  He and his wife now live in Point Clear, AL..
-			</span></p>
-			<p align="left">&nbsp;</p></td>
-         <td width="25">&nbsp;</td>
-        </tr>
-
-		<td width="25"><img src="mm_spacer.gif" alt="" width="25" height="1" border="0" /></td>
-		<td width="150" id="sidebar" class="smallText">
-			<p align="center" class="style19">EVENTS AND REVIEWS</p>
-
-			<p align="justify"><span class="style18"><span class="style21">Book Review</span>. The Mobile Press-Register reviewed Alabama History On the Air. Read John Sledge's column at <span class="style31"></span></span><span class="style15"><a href="http://blog.al.com/entertainment-press-register/2009/10/old_narrators_words_echo_again.html">The Mobile Press-Register</a></span><br />
-
-			<p align="justify"><span class="style18"><span class="style21"> Alabama History On the Air</span> launched October 20, 2009, at the <span class="style31"> Museum of Mobile.</span></span><br />
-
-			<p align="justify"><span class="style18"><span class="style21">Book Signing for Alabama History On the Air</span>, was on November 7, 2009, 2-4pm, at Page and Palette, Fairhope,  Alabama</span><br />
-
-			  &nbsp;<br />
-			  &nbsp;<br />
-		    </p>		  </td>
-         <td width="25">&nbsp;</td>
-        </tr>
-
-
-        <tr>
-		<td width="25"><img src="mm_spacer.gif" alt="" width="25" height="1" border="0" /></td>
-		<td width="150" id="sidebar" class="smallText">
-			<p align="center" class="style19">INQUIRIES</p>
-			<p align="left"><span class="style18">Purchase, press and speaking inquiries may be directed to the Author:</span></p>
-
-			<p align="left"><span class="style18">fairhopewriter@gmail.com</span><br />
-		    </p>
-			<p><br />
-			  <br />
-              <br /></p>
-			   <br />
-			  &nbsp;<br />
-			  &nbsp;<br />
-			  &nbsp;<br />          </td>
-         <td width="25">&nbsp;</td>
-        </tr>
-      </table>      </td>
-    <td width="4">&nbsp;</td>
-  </tr>
-  <tr>
-    <td width="14">&nbsp;</td>
-    <td width="35"></td>
-    <td width="50">&nbsp;</td>
-    <td width="322">&nbsp;</td>
-    <td width="182">&nbsp;</td>
-    <td width="50">&nbsp;</td>
-    <td width="200">Copyright 2009-2016, Robert M. Glennon</td>
-    <td width="4">&nbsp;</td>
-  </tr>
-</table>
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-10613337-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
+</head>
+  <body class="bg-historian-bg text-historian-text font-body antialiased selection:bg-historian-accent selection:text-white">
+    <div id="root"></div>
 
-</body>
+    <script type="text/babel">
+      const { useState, useEffect } = React;
+
+      // --- DATA & CONSTANTS ---
+
+      const BOOKS = [
+        {
+          id: 'history-on-air',
+          title: 'Alabama History on the Air',
+          description: [
+            "Thursday, October 24, 1929 triggered the Great Depression. In the depths of the fallen economy, there was either long days of hard work with minimum pay, or unemployment. Morale was low and Alabamians needed a boost! Then public communications took a significant upturn!",
+            "On February 7, 1930, the Mobile Press and News Item launched the first radio station in Mobile, WODX. Residents of the Gulf Coast could now hear world news and local events first hand.",
+            "Within two weeks, John F. Glennon, prominent businessman and well known Alabama historian, was sponsored by the Mobile Real Estate Board, to promote the culture, scenery and attributes of the Mobile area. In January, 1935, the Old Narrator, as Glennon called himself, began a series on Highlights in Alabama History. The series aired 3 times a week for 2 years, with stories about Alabama's past. He told of rivalries, romance and adventure and gave listeners incentive to feel better about themselves and their well-being.",
+            "This book covers 62 of 192 recently discovered radio scripts, providing insight into Alabama history as it was known in the 30s."
+          ],
+          imageUrl: 'https://github.com/bobglennon/bobglennon.github.io/blob/master/ontheairimage.jpg?raw=true',
+          pageCount: 400,
+          prices: [
+            { type: 'Hardback', price: '$34.95' },
+            { type: 'Paperback', price: '$23.95' }
+          ]
+        },
+        {
+          id: 'kudjo',
+          title: 'Kudjo',
+          subtitle: 'The Last Slave Voyage to America',
+          description: [
+            "On a riverboat between Montgomery and Mobile, AL, in the mid-1800s, a wager of $10,000 was set as the challenge that slaves from Africa could no longer be brought into the United States. The schooner \"Clotilde\" was secretly dispatched and returned in July 1860 with 115 Africans. They were smuggled ashore and sold to various plantation owners.",
+            "This story follows the life of Cudjoe Kazoola Lewis from capture in Dahomey to freedom after the War Between The States. Cudjoe became a leader of the formerly enslaved villagers of Tarkar, as they settled in Africatown, north of Mobile, to become the only settlement in the United States to speak a pure African dialect.",
+            "This true story was found in a tattered envelope that was tucked away in 1935 and remained unopened until 1997! Research revealed the facts behind several discussions in 1932 with Cudjoe by Rosemary Glennon and documents Cudjoe's life and the last slave voyage to America."
+          ],
+          imageUrl: 'https://github.com/bobglennon/bobglennon.github.io/blob/master/kudjoimage.jpg?raw=true',
+          pageCount: 68,
+          prices: [
+            { type: 'Paperback', price: '$11.95' }
+          ]
+        },
+        {
+          id: 'stonecrest',
+          title: 'Legacy of Stonecrest',
+          subtitle: 'South Marion County, FL',
+          description: [
+            "Stonecrest is a community in South Marion County, Florida, developed by entrepreneurs during the building boom of the 1990s. The Legacy of Stonecrest places it nearly atop the great Florida Aquifer, on land heretofore used for cattle ranching and citrus groves.",
+            "In 1827, South Marion County was placed on the Seminole Indian Reservation for a brief time while the Governor of Florida negotiated relocation with the Indians. About 30 miles to the southwest, the Indians had left their victorious mark on the Dade Battlefield.",
+            "About 10 miles north, Ma Barker and her son ended their rampage of crime in a shootout with Federal agents. Nearby in 1935, the infamous Cross Florida Canal was started. The project was funded and squelched for the third and final time in 1964, by President Johnson.",
+            "This small book tells in graphic detail, the colorful history of South Marion County and Stonecrest."
+          ],
+          imageUrl: 'https://github.com/bobglennon/bobglennon.github.io/blob/master/stone2.jpg?raw=true',
+          pageCount: 42,
+          prices: [
+            { type: 'Paperback', price: '$5.00' }
+          ]
+        }
+      ];
+
+      const AUTHOR_BIO = (
+        <React.Fragment>
+          <p className="mb-4 text-justify">
+            Robert M. (Bob) Glennon began writing Southern history in 1987 when he found old documents that showed his family in the mainstream of Alabama’s formative history. He was born on the Gulf Coast and was graduated from Mississippi State University and attended Loyola University Law School, New Orleans while working in the electronics industry.
+          </p>
+          <p className="mb-4 text-justify">
+            He retired from International telecommunications in 1997 and began to research little known events and persons in American history. He is now a public speaker on historic topics and has been published on contemporary non-fiction subjects, as well as extensively researched documentaries. He and his wife now live in Point Clear, AL.
+          </p>
+        </React.Fragment>
+      );
+
+      const EVENTS_AND_REVIEWS = (
+        <div className="space-y-4">
+          <p className="text-justify">
+            <strong className="text-historian-accent block mb-1">Book Review</strong>
+            The Mobile Press-Register reviewed Alabama History On the Air. Read John Sledge's column at{' '}
+            <a 
+              href="https://web.archive.org/web/20150919062331/http://blog.al.com/entertainment-press-register/2009/10/old_narrators_words_echo_again.html" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-historian-muted font-bold hover:underline"
+            >
+              The Mobile Press-Register
+            </a>
+          </p>
+          <p className="text-justify">
+            <strong className="text-historian-accent block mb-1">Alabama History On the Air</strong>
+            Launched October 20, 2009, at the <a href="http://www.historymuseumofmobile.com/" target="_blank" rel="noopener noreferrer" className="text-historian-muted font-bold hover:underline">Museum of Mobile.</a>
+          </p>
+          <p className="text-justify">
+            <strong className="text-historian-accent block mb-1">Book Signing</strong>
+            For Alabama History On the Air, was on November 7, 2009, 2-4pm, at Page and Palette, Fairhope, Alabama.
+          </p>
+        </div>
+      );
+
+      // --- COMPONENTS ---
+
+      const BookList = ({ books }) => {
+        return (
+          <div className="space-y-4">
+            <div className="flex items-center gap-4 mb-16">
+              <h2 className="text-3xl font-serif text-historian-text tracking-wide">
+                Books in Print
+              </h2>
+              <div className="h-px bg-historian-accent/30 flex-grow"></div>
+            </div>
+            
+            {books.map((book, idx) => (
+              <React.Fragment key={book.id}>
+                <article className="relative bg-historian-panel rounded-lg p-6 md:p-8 border border-historian-text/5 shadow-md hover:shadow-xl transition-all duration-500 group">
+                  
+                  <div className="flex flex-col md:flex-row gap-8 md:gap-10">
+                    {/* Book Cover */}
+                    <div className="flex-shrink-0 mx-auto md:mx-0 w-48 perspective-1000">
+                      <div className="relative transform group-hover:-translate-y-1 transition-transform duration-500">
+                        <img 
+                          src={book.imageUrl} 
+                          alt={`Cover of ${book.title}`}
+                          className="relative w-full h-auto rounded-sm shadow-[0_4px_20px_rgba(0,0,0,0.3)] border border-historian-text/10" 
+                        />
+                      </div>
+                    </div>
+
+                    {/* Book Details */}
+                    <div className="flex-grow flex flex-col h-full">
+                      <header className="mb-6 text-center md:text-left">
+                        <h3 className="text-3xl font-serif text-historian-accent mb-2">{book.title}</h3>
+                        {book.subtitle && (
+                          <h4 className="text-lg text-historian-muted italic font-light">{book.subtitle}</h4>
+                        )}
+                      </header>
+                      
+                      <div className="space-y-4 text-historian-text leading-relaxed font-light mb-8 flex-grow">
+                        {book.description.map((paragraph, pIdx) => (
+                          <p key={pIdx}>
+                            {paragraph}
+                          </p>
+                        ))}
+                      </div>
+
+                      <footer className="mt-auto pt-6 border-t border-historian-text/10 flex flex-wrap items-center justify-between gap-4">
+                        <span className="text-sm font-bold text-historian-muted/60 uppercase tracking-widest">
+                          {book.pageCount} Pages
+                        </span>
+                        
+                        <div className="flex gap-4">
+                          {book.prices.map((price, priceIdx) => (
+                            <div key={priceIdx} className="flex flex-col text-right">
+                              <span className="text-xs text-historian-muted uppercase tracking-wider">{price.type}</span>
+                              <span className="text-xl font-serif text-historian-accent">{price.price}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </footer>
+                    </div>
+                  </div>
+                </article>
+                
+                {/* Subtle Divider between books */}
+                {idx < books.length - 1 && <div className="border-b border-historian-text/5 my-8"></div>}
+              </React.Fragment>
+            ))}
+          </div>
+        );
+      };
+
+      const Sidebar = () => {
+        return (
+          <div className="space-y-8">
+            
+            {/* Author Profile */}
+            <div className="bg-historian-panel rounded-lg p-8 border border-historian-text/5 text-center shadow-md relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-historian-accent/30 to-transparent"></div>
+              <div className="relative inline-block mb-6">
+                 <img 
+                  src="https://github.com/bobglennon/bobglennon.github.io/blob/master/rmglennon.jpg?raw=true" 
+                  alt="Robert M. Glennon" 
+                  className="w-40 h-auto rounded-full border-4 border-white shadow-lg sepia-[.20]"
+                />
+              </div>
+              <h3 className="font-serif text-2xl text-historian-text mb-2">Robert M. Glennon</h3>
+              <p className="text-xs font-bold tracking-widest text-historian-accent uppercase mb-6">Biography</p>
+              <div className="text-sm leading-7 text-historian-muted text-justify font-light">
+                {AUTHOR_BIO}
+              </div>
+            </div>
+
+            {/* Events Widget */}
+            <div className="bg-historian-panel rounded-lg p-8 border border-historian-text/5 shadow-md">
+              <h3 className="font-serif text-xl text-historian-accent mb-6 border-b border-historian-text/10 pb-4">
+                Events & Reviews
+              </h3>
+              <div className="text-sm leading-relaxed text-historian-text space-y-4">
+                {EVENTS_AND_REVIEWS}
+              </div>
+            </div>
+
+            {/* Contact Widget */}
+            <div className="bg-white rounded-lg p-1 shadow-md border border-historian-text/5">
+              <div className="bg-historian-panel rounded h-full p-6 text-center">
+                  <h3 className="font-serif text-xl text-historian-text mb-4">
+                    Get in Touch
+                  </h3>
+                  <p className="text-sm text-historian-muted mb-6 font-light">
+                    Purchase, press and speaking inquiries may be directed to the Author:
+                  </p>
+                  <a 
+                    href="mailto:fairhopewriter@gmail.com" 
+                    className="inline-block w-full py-3 px-4 bg-historian-bg/50 hover:bg-historian-bg text-historian-accent font-bold rounded border border-historian-accent/30 transition-all duration-300"
+                  >
+                    fairhopewriter@gmail.com
+                  </a>
+              </div>
+            </div>
+
+          </div>
+        );
+      };
+
+      const Footer = () => {
+        return (
+          <footer className="w-full py-12 mt-12 bg-historian-text/5 border-t border-historian-text/10 text-center">
+            <div className="max-w-5xl mx-auto px-6">
+              <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-historian-muted text-sm font-light tracking-wider">
+                  <span>&copy; {new Date().getFullYear()} Robert M. Glennon</span>
+                  <span className="hidden md:inline">•</span>
+                  <span>All rights reserved</span>
+              </div>
+              <div className="mt-6 flex justify-center gap-8 text-xs text-historian-accent uppercase tracking-[0.2em]">
+                  <span>Author</span>
+                  <span>Historian</span>
+                  <span>Speaker</span>
+              </div>
+            </div>
+          </footer>
+        );
+      };
+
+      // --- APP COMPONENT ---
+
+      const App = () => {
+        return (
+          <div className="min-h-screen bg-historian-bg relative overflow-x-hidden">
+            
+            {/* Background Gradient Elements */}
+            <div className="fixed inset-0 pointer-events-none bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-white/20 via-historian-bg to-historian-muted/10 opacity-60 z-0"></div>
+            
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+              
+              {/* Header / Hero Section */}
+              <header className="mb-20 text-center">
+                <div className="inline-block relative">
+                   {/* Image Container */}
+                   <div className="p-2 bg-white shadow-xl rounded-sm transform rotate-1">
+                     <img 
+                       src="https://github.com/bobglennon/bobglennon.github.io/blob/master/steam2.jpg?raw=true" 
+                       alt="Point Clear, Hotel, Alabama, circa 1897" 
+                       className="w-auto h-auto max-h-[250px] mx-auto rounded-sm"
+                     />
+                   </div>
+                   <div className="mt-3 text-xs text-historian-muted font-serif italic tracking-wide">Point Clear, AL - circa 1897</div>
+                </div>
+                
+                <div className="mt-10 space-y-4">
+                  <h1 className="text-5xl md:text-7xl font-serif text-historian-text drop-shadow-sm tracking-wide">
+                    Robert M. Glennon
+                  </h1>
+                  <div className="flex items-center justify-center gap-4 text-historian-accent">
+                    <span className="h-px w-12 bg-current opacity-50"></span>
+                    <span className="font-serif italic text-xl md:text-2xl text-historian-muted tracking-wider">Author & Historian</span>
+                    <span className="h-px w-12 bg-current opacity-50"></span>
+                  </div>
+                </div>
+              </header>
+
+              {/* Main Content Layout */}
+              <main className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                {/* Left Column: Books (8 cols) */}
+                <section className="lg:col-span-8 space-y-16">
+                   <BookList books={BOOKS} />
+                </section>
+
+                {/* Right Column: Sidebar (4 cols) */}
+                <aside className="lg:col-span-4 lg:sticky lg:top-12 space-y-8">
+                  <Sidebar />
+                </aside>
+
+              </main>
+            </div>
+
+            <Footer />
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(<App />);
+    </script>
+  </body>
 </html>
 
